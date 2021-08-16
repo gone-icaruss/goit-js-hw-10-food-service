@@ -8,8 +8,8 @@ const theme = {
   DARK: 'dark-theme',
 };
 
-// themeDark();
-// themeLight();
+themeDark();
+themeLight();
 
 refs.themeBtn.addEventListener('change', toggle => {
     toggle.target.checked ? themeDark() : themeLight()
