@@ -15,7 +15,7 @@ refs.themeBtn.addEventListener('change', toggle => {
     toggle.target.checked ? themeDark() : themeLight()
 });
 
-// const basicTheme = localStorage.setItem('body_theme', theme.LIGHT);
+const basicTheme = localStorage.setItem('body_theme', theme.LIGHT);
 
 function basicTheme() {
     refs.body.classList.add(theme.LIGHT);
