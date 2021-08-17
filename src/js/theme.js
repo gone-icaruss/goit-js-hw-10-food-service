@@ -8,6 +8,18 @@ const theme = {
   DARK: 'dark-theme',
 };
 
+
+function checkTheme () {
+   if (localStorage.getItem('check') === 'true') {
+        (refs.themeBtn.check === true);
+        localStorage.setItem('body_theme', theme.LIGHT)
+        refs.body.classList.remove(theme.LIGHT)
+        refs.body.classList.add(theme.DARK);
+    } else {
+       (refs.themeBtn.check === false)
+   }
+};
+
 themeDark();
 themeLight();
 
@@ -22,16 +34,6 @@ function basicTheme() {
     localStorage.setItem('body_theme', theme.LIGHT);
 };
 
-function checkTheme () {
-   if (localStorage.getItem('check') === 'true') {
-        (refs.themeBtn.check === true);
-        localStorage.setItem('body_theme', theme.LIGHT)
-        refs.body.classList.remove(theme.LIGHT)
-        refs.body.classList.add(theme.DARK);
-    } else {
-       (refs.themeBtn.check === false)
-   }
-};
 
 
 function themeLight() {
