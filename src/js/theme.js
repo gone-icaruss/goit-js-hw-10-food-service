@@ -8,14 +8,13 @@ const theme = {
   DARK: 'dark-theme',
 };
 
-themeDark();
-themeLight();
+basicTheme();
+checkTheme();
 
 refs.themeBtn.addEventListener('change', toggle => {
     toggle.target.checked ? themeDark() : themeLight()
 });
 
-// const basicTheme = localStorage.setItem('body_theme', theme.LIGHT);
 
 function basicTheme() {
     refs.body.classList.add(theme.LIGHT);
