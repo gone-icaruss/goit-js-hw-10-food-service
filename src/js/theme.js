@@ -23,7 +23,7 @@ function basicTheme() {
 };
 
 function checkTheme () {
-   if (localStorage.getItem('check') === 'true') {
+   if (localStorage.getItem('checked') === 'true') {
         (refs.themeBtn.checked === true);
         localStorage.setItem('body_theme', theme.LIGHT)
         refs.body.classList.remove(theme.LIGHT)
@@ -39,7 +39,7 @@ function themeLight() {
         refs.body.classList.remove(theme.DARK)
         refs.body.classList.add(theme.LIGHT)
         localStorage.setItem('body_theme', theme.LIGHT)
-        localStorage.setItem('check', true)
+        localStorage.setItem('checked', true)
     }
 };
 
@@ -48,7 +48,7 @@ function themeDark() {
         refs.body.classList.remove(theme.LIGHT)
         refs.body.classList.add(theme.DARK)
         localStorage.setItem('body_theme', theme.DARK)
-        localStorage.setItem('check', false)
+        localStorage.setItem('checked', false)
     }
 };
 
