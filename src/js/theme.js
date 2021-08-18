@@ -8,8 +8,6 @@ const theme = {
   DARK: 'dark-theme',
 };
 
-checkTheme();
-
 themeDark();
 themeLight();
 
