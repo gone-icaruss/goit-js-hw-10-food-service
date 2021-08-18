@@ -24,7 +24,7 @@ function basicTheme() {
 
 function checkTheme () {
    if (localStorage.getItem('check') === 'true') {
-        (refs.themeBtn.check === true);
+        (refs.themeBtn.checked === true);
         localStorage.setItem('body_theme', theme.LIGHT)
         refs.body.classList.remove(theme.LIGHT)
         refs.body.classList.add(theme.DARK);
