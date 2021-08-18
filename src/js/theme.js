@@ -26,10 +26,10 @@ function checkTheme () {
    if (localStorage.getItem('check') === 'true') {
         (refs.themeBtn.check === true);
         localStorage.setItem('body_theme', theme.LIGHT)
-        // refs.body.classList.remove(theme.LIGHT)
-        // refs.body.classList.add(theme.DARK);
+        refs.body.classList.remove(theme.LIGHT)
+        refs.body.classList.add(theme.DARK);
     } else {
-       (refs.themeBtn.check === false)
+       (refs.themeBtn.checked === false)
    }
 };
 
